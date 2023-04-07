@@ -7,9 +7,14 @@ Feature: Outline Sample
     Given <other_state> without a table
   Examples: Rainbow colours
     |  state   | other_state |
-    | missing |  passing|
-    | passing| passing |
+    | missing  | passing |
+    | passing  | passing |
+    | passing  | missing |
+    | missing  | missing |
 | failing | passing |
 Examples:Only passing
 |  state   | other_state |
+| missing  | passing |
 | passing  | passing |
+| passing  | missing |
+| missing  | missing |

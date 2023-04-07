@@ -14,4 +14,14 @@ Feature: Addition
     | 20      | 30      | add    | 50     |
     | 2       | 5       | add    | 7      |
     | 0       | 40      | add    | 40     |
-
+    # inputs negativos
+    | -5      | 30      | add    | 25     |
+    | 5       | -3      | add    | 2      |
+    # resultado negativo
+    | 5       | -6      | add    | -1     |
+    # resultado nulo normal
+    | 0       |  0      | add    | 0      |
+    # resultado nulo por inputs negativos
+    | -1      |  1      | add    | 0      |
+    # resultado não numérico (erro)
+    | a       |  b      | add    | error  |
